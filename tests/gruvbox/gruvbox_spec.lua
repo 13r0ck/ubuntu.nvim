@@ -1,6 +1,6 @@
-require("plenary.reload").reload_module("gruvbox", true)
-local gruvbox = require("gruvbox")
-local default = gruvbox.config
+require("plenary.reload").reload_module("ubuntu", true)
+local ubuntu = require("ubuntu")
+local default = ubuntu.config
 
 local function clear_term_colors()
   for item = 0, 15 do
@@ -10,8 +10,8 @@ end
 
 describe("tests", function()
   it("works with default values", function()
-    gruvbox.setup()
-    assert.are.same(gruvbox.config, default)
+    ubuntu.setup()
+    assert.are.same(ubuntu.config, default)
   end)
 
   it("works with config overrides", function()
@@ -40,8 +40,8 @@ describe("tests", function()
       transparent_mode = false,
     }
 
-    gruvbox.setup({ undercurl = false, underline = false })
-    assert.are.same(gruvbox.config, expected)
+    ubuntu.setup({ undercurl = false, underline = false })
+    assert.are.same(ubuntu.config, expected)
   end)
 
   it("should override a hightlight color", function()
@@ -52,8 +52,8 @@ describe("tests", function()
       },
     }
 
-    gruvbox.setup(config)
-    gruvbox.load()
+    ubuntu.setup(config)
+    ubuntu.load()
 
     local search_group_id = vim.api.nvim_get_hl_id_by_name("Search")
     local search_values = {
@@ -79,8 +79,8 @@ describe("tests", function()
       },
     }
 
-    gruvbox.setup(config)
-    gruvbox.load()
+    ubuntu.setup(config)
+    ubuntu.load()
 
     local search_group_id = vim.api.nvim_get_hl_id_by_name("Search")
     local search_values = {
@@ -104,8 +104,8 @@ describe("tests", function()
         TelescopePreviewBorder = { fg = "#990000", bg = nil },
       },
     }
-    gruvbox.setup(config)
-    gruvbox.load()
+    ubuntu.setup(config)
+    ubuntu.load()
 
     local group_id = vim.api.nvim_get_hl_id_by_name("TelescopePreviewBorder")
     local values = {
@@ -125,8 +125,8 @@ describe("tests", function()
       },
     }
 
-    gruvbox.setup(config)
-    gruvbox.load()
+    ubuntu.setup(config)
+    ubuntu.load()
 
     local group_id = vim.api.nvim_get_hl_id_by_name("Comment")
     local values = {
@@ -137,24 +137,24 @@ describe("tests", function()
 
   it("does not set terminal colors when terminal_colors is false", function()
     clear_term_colors()
-    gruvbox.setup({ terminal_colors = false })
-    gruvbox.load()
+    ubuntu.setup({ terminal_colors = false })
+    ubuntu.load()
     assert.is_nil(vim.g.terminal_color_0)
   end)
 
   it("sets terminal colors when terminal_colors is true", function()
     clear_term_colors()
-    gruvbox.setup({ terminal_colors = true })
-    gruvbox.load()
+    ubuntu.setup({ terminal_colors = true })
+    ubuntu.load()
 
     -- dark bg
-    local colors = require("gruvbox").palette
+    local colors = require("ubuntu").palette
     vim.opt.background = "dark"
     assert.are.same(vim.g.terminal_color_0, colors.dark0)
 
     -- light bg
     clear_term_colors()
-    gruvbox.load()
+    ubuntu.load()
     vim.opt.background = "light"
     assert.are.same(vim.g.terminal_color_0, colors.light0)
   end)
