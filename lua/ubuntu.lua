@@ -71,73 +71,61 @@ Ubuntu.config = {
 -- main ubuntu color palette
 ---@class UbuntuPalette
 Ubuntu.palette = {
-  -- Dark Shades
-  dark0_hard = "#300a24", -- Darker shade
-  dark0 = "#77216F", -- Ubuntu dark aubergine
-  dark0_soft = "#5D275D", -- Soft dark aubergine
-  dark1 = "#222222", -- Dark gray
-  dark2 = "#333333",
-  dark3 = "#444444",
-  dark4 = "#555555",
-
-  -- Light Shades
-  light0_hard = "#EAEAEA", -- Light gray (for contrast)
-  light0 = "#F5F5F5",
-  light0_soft = "#F6F6F6",
-  light1 = "#DDDDDD",
-  light2 = "#CCCCCC",
-  light3 = "#BBBBBB",
-  light4 = "#AAAAAA",
-
-  -- Ubuntu Orange and complementary colors
-  bright_red = "#E95420", -- Ubuntu Orange
-  bright_green = "#48A23F", -- Green (complementary)
-  bright_yellow = "#F0A500", -- Yellow (complementary)
-  bright_blue = "#19A2DE", -- Blue (complementary)
-  bright_purple = "#826AB1", -- Purple
-  bright_aqua = "#5E2750", -- Aqua
-  bright_orange = "#DF531D", -- Lighter Orange
-
-  -- Neutral tones based on Ubuntu palette
-  neutral_red = "#CC0000",
-  neutral_green = "#4E9A06",
-  neutral_yellow = "#C4A000",
-  neutral_blue = "#3465A4",
-  neutral_purple = "#75507B",
-  neutral_aqua = "#06989A",
-  neutral_orange = "#F57900",
-
-  -- Faded versions of the above colors
-  faded_red = "#A40000",
-  faded_green = "#73D216",
-  faded_yellow = "#EDD400",
-  faded_blue = "#729FCF",
-  faded_purple = "#AD7FA8",
-  faded_aqua = "#34E2E2",
-  faded_orange = "#FCAF3E",
-
-  -- Additional Ubuntu-themed shades
-  dark_red_hard = "#A40000",
-  dark_red = "#CC0000",
-  dark_red_soft = "#CE5C00",
-  light_red_hard = "#EF2929",
-  light_red = "#F57900",
-  light_red_soft = "#E9B96E",
-  dark_green_hard = "#4E9A06",
-  dark_green = "#8AE234",
-  dark_green_soft = "#73D216",
-  light_green_hard = "#9AFF91",
-  light_green = "#8AE234",
-  light_green_soft = "#A3BE8C",
-  dark_aqua_hard = "#06989A",
-  dark_aqua = "#34E2E2",
-  dark_aqua_soft = "#89B6E2",
-  light_aqua_hard = "#7AD3F0",
-  light_aqua = "#9DDFE5",
-  light_aqua_soft = "#B3E4E2",
-  gray = "#888A85",
+  dark0_hard = "#000000",
+  dark0 = "#5E5C64",
+  dark0_soft = "#77767B",
+  dark1 = "#504E55",
+  dark2 = "#3D3846",
+  dark3 = "#241F31",
+  dark4 = "#241F31",
+  light0_hard = "#FFFFFF",
+  light0 = "#FCFCFC",
+  light0_soft = "#FFFFFF",
+  light1 = "#F6F5F4",
+  light2 = "#DEDDDA",
+  light3 = "#C0BFBC",
+  light4 = "#9A9996",
+  bright_red = "#EA485C",
+  bright_green = "#F29879",
+  bright_yellow = "#FCCD87",
+  bright_blue = "#75D3F4",
+  bright_purple = "#B776B0",
+  bright_aqua = "#75D3F4",
+  bright_orange = "#F29879",
+  neutral_red = "#cc241d",
+  neutral_green = "#98971a",
+  neutral_yellow = "#d79921",
+  neutral_blue = "#458588",
+  neutral_purple = "#b16286",
+  neutral_aqua = "#689d6a",
+  neutral_orange = "#d65d0e",
+  faded_red = "#9d0006",
+  faded_green = "#79740e",
+  faded_yellow = "#b57614",
+  faded_blue = "#076678",
+  faded_purple = "#8f3f71",
+  faded_aqua = "#427b58",
+  faded_orange = "#af3a03",
+  dark_red_hard = "#792329",
+  dark_red = "#722529",
+  dark_red_soft = "#7b2c2f",
+  light_red_hard = "#fc9690",
+  light_red = "#fc9487",
+  light_red_soft = "#f78b7f",
+  dark_green_hard = "#5a633a",
+  dark_green = "#62693e",
+  dark_green_soft = "#686d43",
+  light_green_hard = "#d3d6a5",
+  light_green = "#d5d39b",
+  light_green_soft = "#cecb94",
+  dark_aqua_hard = "#3e4934",
+  dark_aqua = "#49503b",
+  dark_aqua_soft = "#525742",
+  light_aqua_hard = "#e6e9c1",
+  light_aqua = "#e8e5b5",
+  light_aqua_soft = "#e1dbac",
+  gray = "#928374",
 }
-
 -- get a hex list of ubuntu colors based on current bg and constrast config
 local function get_colors()
   local p = Ubuntu.palette
