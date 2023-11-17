@@ -71,60 +71,71 @@ Gruvbox.config = {
 -- main gruvbox color palette
 ---@class GruvboxPalette
 Gruvbox.palette = {
-  dark0_hard = "#1d2021",
-  dark0 = "#282828",
-  dark0_soft = "#32302f",
-  dark1 = "#3c3836",
-  dark2 = "#504945",
-  dark3 = "#665c54",
-  dark4 = "#7c6f64",
-  light0_hard = "#f9f5d7",
-  light0 = "#fbf1c7",
-  light0_soft = "#f2e5bc",
-  light1 = "#ebdbb2",
-  light2 = "#d5c4a1",
-  light3 = "#bdae93",
-  light4 = "#a89984",
-  bright_red = "#fb4934",
-  bright_green = "#b8bb26",
-  bright_yellow = "#fabd2f",
-  bright_blue = "#83a598",
-  bright_purple = "#d3869b",
-  bright_aqua = "#8ec07c",
-  bright_orange = "#fe8019",
-  neutral_red = "#cc241d",
-  neutral_green = "#98971a",
-  neutral_yellow = "#d79921",
-  neutral_blue = "#458588",
-  neutral_purple = "#b16286",
-  neutral_aqua = "#689d6a",
-  neutral_orange = "#d65d0e",
-  faded_red = "#9d0006",
-  faded_green = "#79740e",
-  faded_yellow = "#b57614",
-  faded_blue = "#076678",
-  faded_purple = "#8f3f71",
-  faded_aqua = "#427b58",
-  faded_orange = "#af3a03",
-  dark_red_hard = "#792329",
-  dark_red = "#722529",
-  dark_red_soft = "#7b2c2f",
-  light_red_hard = "#fc9690",
-  light_red = "#fc9487",
-  light_red_soft = "#f78b7f",
-  dark_green_hard = "#5a633a",
-  dark_green = "#62693e",
-  dark_green_soft = "#686d43",
-  light_green_hard = "#d3d6a5",
-  light_green = "#d5d39b",
-  light_green_soft = "#cecb94",
-  dark_aqua_hard = "#3e4934",
-  dark_aqua = "#49503b",
-  dark_aqua_soft = "#525742",
-  light_aqua_hard = "#e6e9c1",
-  light_aqua = "#e8e5b5",
-  light_aqua_soft = "#e1dbac",
-  gray = "#928374",
+  -- Dark Shades
+  dark0_hard = "#300a24", -- Darker shade
+  dark0 = "#77216F", -- Ubuntu dark aubergine
+  dark0_soft = "#5D275D", -- Soft dark aubergine
+  dark1 = "#222222", -- Dark gray
+  dark2 = "#333333",
+  dark3 = "#444444",
+  dark4 = "#555555",
+
+  -- Light Shades
+  light0_hard = "#EAEAEA", -- Light gray (for contrast)
+  light0 = "#F5F5F5",
+  light0_soft = "#F6F6F6",
+  light1 = "#DDDDDD",
+  light2 = "#CCCCCC",
+  light3 = "#BBBBBB",
+  light4 = "#AAAAAA",
+
+  -- Ubuntu Orange and complementary colors
+  bright_red = "#E95420", -- Ubuntu Orange
+  bright_green = "#48A23F", -- Green (complementary)
+  bright_yellow = "#F0A500", -- Yellow (complementary)
+  bright_blue = "#19A2DE", -- Blue (complementary)
+  bright_purple = "#826AB1", -- Purple
+  bright_aqua = "#5E2750", -- Aqua
+  bright_orange = "#DF531D", -- Lighter Orange
+
+  -- Neutral tones based on Ubuntu palette
+  neutral_red = "#CC0000",
+  neutral_green = "#4E9A06",
+  neutral_yellow = "#C4A000",
+  neutral_blue = "#3465A4",
+  neutral_purple = "#75507B",
+  neutral_aqua = "#06989A",
+  neutral_orange = "#F57900",
+
+  -- Faded versions of the above colors
+  faded_red = "#A40000",
+  faded_green = "#73D216",
+  faded_yellow = "#EDD400",
+  faded_blue = "#729FCF",
+  faded_purple = "#AD7FA8",
+  faded_aqua = "#34E2E2",
+  faded_orange = "#FCAF3E",
+
+  -- Additional Ubuntu-themed shades
+  dark_red_hard = "#A40000",
+  dark_red = "#CC0000",
+  dark_red_soft = "#CE5C00",
+  light_red_hard = "#EF2929",
+  light_red = "#F57900",
+  light_red_soft = "#E9B96E",
+  dark_green_hard = "#4E9A06",
+  dark_green = "#8AE234",
+  dark_green_soft = "#73D216",
+  light_green_hard = "#9AFF91",
+  light_green = "#8AE234",
+  light_green_soft = "#A3BE8C",
+  dark_aqua_hard = "#06989A",
+  dark_aqua = "#34E2E2",
+  dark_aqua_soft = "#89B6E2",
+  light_aqua_hard = "#7AD3F0",
+  light_aqua = "#9DDFE5",
+  light_aqua_soft = "#B3E4E2",
+  gray = "#888A85",
 }
 
 -- get a hex list of gruvbox colors based on current bg and constrast config
